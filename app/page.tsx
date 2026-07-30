@@ -42,7 +42,7 @@ export default function Portfolio() {
         <div className="font-bold text-xl text-indigo-950 tracking-tight">
           JOSE FERNANDO
           <div className="text-[10px] uppercase text-slate-400 tracking-widest font-medium mt-0.5">
-            Technical Specialist
+            Computer Engineer | Fullstack Developer
           </div>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
@@ -64,7 +64,7 @@ export default function Portfolio() {
             Jose Fernando <br/>B. Clemente
           </h1>
           <h2 className="text-lg font-bold text-slate-700 tracking-wide uppercase">
-            Technical Support & E-Commerce Specialist
+            Computer Engineer & Fullstack Developer
           </h2>
           <p className="text-slate-600 leading-relaxed max-w-lg">
             Helping businesses scale with efficient technical support, seamless e-commerce operations, and data-driven ad management.
@@ -79,10 +79,13 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="relative aspect-square md:aspect-[4/5] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl">
-          {/* Add your professional photo to the public folder and change this src */}
-          <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-            [ Insert Professional Photo Here ]
-          </div>
+          <Image 
+            src="/profile.jpg" 
+            alt="Jose Fernando B. Clemente"
+            fill
+            className="object-cover"
+           priority
+          />
         </div>
       </section>
 
@@ -230,18 +233,39 @@ export default function Portfolio() {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Info</h4>
             <ul className="space-y-3 text-indigo-200 text-sm">
-              <li className="flex items-center gap-2">📞 +63 900 000 0000</li>
-              <li className="flex items-center gap-2">✉ your.email@gmail.com</li>
-              <li className="flex items-center gap-2">📍 Malolos, Central Luzon, Philippines</li>
+              <li className="flex items-center gap-2">📞 +63 976 339 6671</li>
+              <li className="flex items-center gap-2">✉ josephclemente13.jc@gmail.com</li>
+              <li className="flex items-center gap-2">📍 Santa Maria, Bulacan, Philippines</li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-lg mb-4">Professional Presence</h4>
             <div className="flex gap-4">
-              {/* Replace # with your actual links */}
-              <a href="#" className="w-10 h-10 bg-indigo-900 rounded flex items-center justify-center hover:bg-indigo-800 transition-colors">in</a>
-              <a href="#" className="w-10 h-10 bg-indigo-900 rounded flex items-center justify-center hover:bg-indigo-800 transition-colors">gh</a>
+              <a 
+              href="www.linkedin.com/in/jose-fernando-clemente" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-indigo-900 rounded flex items-center justify-center hover:bg-indigo-800 transition-colors"
+              >
+              in
+              </a>
+              <a 
+              href="https://www.facebook.com/jclemente.13/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-indigo-900 rounded flex items-center justify-center hover:bg-indigo-800 transition-colors"
+              >
+              in
+              </a>
+              <a 
+              href="https://github.com/DarthAlien-1" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-indigo-900 rounded flex items-center justify-center hover:bg-indigo-800 transition-colors"
+              >
+              in
+              </a>
             </div>
           </div>
 
