@@ -80,7 +80,7 @@ export default function Portfolio() {
         </div>
         <div className="relative aspect-square md:aspect-[4/5] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl">
           <Image 
-            src="/profile.jpg" 
+            src="/pic.jpg" 
             alt="Jose Fernando B. Clemente"
             fill
             className="object-cover"
@@ -212,7 +212,7 @@ export default function Portfolio() {
             <div className="font-bold text-2xl tracking-tight">
               JOSE FERNANDO
               <div className="text-[10px] uppercase text-indigo-300 tracking-widest font-medium mt-0.5">
-                Technical Specialist
+                Computer Engineer | Fullstack Developer
               </div>
             </div>
             <p className="text-indigo-200 text-sm leading-relaxed">
