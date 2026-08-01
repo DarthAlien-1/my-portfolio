@@ -153,7 +153,7 @@ export default function Portfolio() {
 
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {['All', 'Technical Support', 'E-Commerce', 'Ad Management'].map((tab) => (
+          {['All', 'Technical Support', 'E-Commerce', 'Image Processing'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
