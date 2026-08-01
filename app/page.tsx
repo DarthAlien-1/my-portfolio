@@ -18,8 +18,8 @@ export default function Portfolio() {
       id: 2,
       title: 'Jazz Lugaw Web App',
       category: 'E-Commerce',
-      image: 'E:\sample\my-portfolio\public\JLFOODS.png',
-      link: '#',
+      image: '/JLFOODS.png',
+      link: 'https://jazz-lugaw.vercel.app/',
     },
     {
       id: 3,
