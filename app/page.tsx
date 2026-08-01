@@ -11,7 +11,7 @@ export default function Portfolio() {
       id: 1,
       title: 'Customer Inquiry Management Portal',
       category: 'Technical Support',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
+      image: '/customer.png',
       link: 'https://customer-inquiry-portal.vercel.app',
     },
     {
