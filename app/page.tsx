@@ -23,10 +23,10 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      title: 'Email Marketing & Ad Analytics',
-      category: 'Ad Management',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-      link: '#',
+      title: 'Smart Image Processor',
+      category: 'Desktop & Vision Application',
+      image: '/image-processor.png',
+      link: 'https://image-processing-toolkit-2.streamlit.app/',
     },
   ];
 
