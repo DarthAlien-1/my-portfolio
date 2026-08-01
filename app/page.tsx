@@ -16,16 +16,16 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: 'E-commerce Support Infrastructure',
+      title: 'Jazz Lugaw Web App',
       category: 'E-Commerce',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
+      image: 'E:\sample\my-portfolio\public\JLFOODS.png',
       link: '#',
     },
     {
       id: 3,
       title: 'Email Marketing & Ad Analytics',
       category: 'Ad Management',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800', // You can swap these image URLs later
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
       link: '#',
     },
   ];
