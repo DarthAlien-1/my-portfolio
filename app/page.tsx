@@ -33,7 +33,7 @@ export default function Portfolio() {
       title: 'Job Match Dashboard',
       category: 'Data & Automation',
       image: '/job-dashboard.png',
-      link: 'https://github.com/DarthAlien-1/job-dashboard',
+      link: 'https://job-dashboard-1221.streamlit.app/',
     },
   ];
 
