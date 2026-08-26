@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: {},
   show: {
     transition: { staggerChildren: 0.15 },
@@ -47,6 +47,13 @@ export default function Portfolio() {
       category: 'Desktop & Vision Application',
       image: '/image-processor.png',
       link: 'https://image-processing-toolkit-2.streamlit.app/',
+    },
+    {
+      id: 4,
+      title: 'Job Match Dashboard',
+      category: 'Data & Automation',
+      image: '/job-dashboard.png',
+      link: 'https://job-dashboard-1221.streamlit.app',
     },
   ];
 
@@ -257,22 +264,24 @@ export default function Portfolio() {
             My Projects
           </motion.h2>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {['All', 'Technical Support', 'E-Commerce', 'Image Processing'].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-6 py-2 text-sm font-semibold rounded transition-colors ${
-                activeTab === tab 
-                  ? 'bg-indigo-950 text-white' 
-                  : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+          {/* Filter Tabs */}
+          <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-2 mb-12">
+            {['All', 'Technical Support', 'E-Commerce', 'Image Processing', 'Data & Automation'].map((tab) => (
+              <motion.button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`px-6 py-2 text-sm font-semibold rounded transition-colors ${
+                  activeTab === tab
+                    ? 'bg-indigo-950 text-white'
+                    : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
+                }`}
+              >
+                {tab}
+              </motion.button>
+            ))}
+          </motion.div>
 
           {/* Project Grid */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-left">
