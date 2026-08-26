@@ -28,6 +28,13 @@ export default function Portfolio() {
       image: '/image-processor.png',
       link: 'https://image-processing-toolkit-2.streamlit.app/',
     },
+    {
+      id: 4,
+      title: 'Job Match Dashboard',
+      category: 'Data & Automation',
+      image: '/job-dashboard.png',
+      link: 'https://github.com/DarthAlien-1/job-dashboard',
+    },
   ];
 
   const filteredProjects = activeTab === 'All' 
@@ -153,7 +160,7 @@ export default function Portfolio() {
 
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {['All', 'Technical Support', 'E-Commerce', 'Image Processing'].map((tab) => (
+          {['All', 'Technical Support', 'E-Commerce', 'Image Processing', 'Data & Automation'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
