@@ -48,13 +48,6 @@ export default function Portfolio() {
       image: '/image-processor.png',
       link: 'https://image-processing-toolkit-2.streamlit.app/',
     },
-    {
-      id: 4,
-      title: 'Job Match Dashboard',
-      category: 'Data & Automation',
-      image: '/job-dashboard.png',
-      link: 'https://job-dashboard-1221.streamlit.app',
-    },
   ];
 
   const filteredProjects = activeTab === 'All'
@@ -264,24 +257,22 @@ export default function Portfolio() {
             My Projects
           </motion.h2>
 
-          {/* Filter Tabs */}
-          <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-2 mb-12">
-            {['All', 'Technical Support', 'E-Commerce', 'Image Processing', 'Data & Automation'].map((tab) => (
-              <motion.button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={`px-6 py-2 text-sm font-semibold rounded transition-colors ${
-                  activeTab === tab
-                    ? 'bg-indigo-950 text-white'
-                    : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
-                }`}
-              >
-                {tab}
-              </motion.button>
-            ))}
-          </motion.div>
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {['All', 'Technical Support', 'E-Commerce', 'Image Processing'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-6 py-2 text-sm font-semibold rounded transition-colors ${
+                activeTab === tab 
+                  ? 'bg-indigo-950 text-white' 
+                  : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
 
           {/* Project Grid */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-left">
