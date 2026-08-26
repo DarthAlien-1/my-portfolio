@@ -91,7 +91,7 @@ export default function Portfolio() {
       </AnimatePresence>
 
       <motion.div
-        className="min-h-screen bg-white font-sans text-slate-800 selection:bg-indigo-900 selection:text-white"
+        className="min-h-screen bg-[#faf0e6] font-sans text-slate-800 selection:bg-indigo-900 selection:text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: isLoading ? 0 : 1 }}
         transition={{ duration: 0.6 }}
